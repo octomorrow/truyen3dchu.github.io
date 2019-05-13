@@ -1,0 +1,699 @@
+@media only screen and (min-width: 1700px) {
+
+}
+
+@media only screen and (min-width: 1500px) and (max-width: 1700px){
+
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1500px){
+
+}
+
+@media screen and (max-width:1199px){
+    .navibar a {
+        font-family: montserrat-semibold;
+        font-size: 13px;
+        color: #fff;
+        padding: 0px 22px;
+    }
+
+    .link-login span {
+        font-size: 9px;
+        font-family: montserrat-semibold;
+    }
+
+    .vip-book li {
+        display: inline-table;
+        position: relative;
+        margin-bottom: 27px;
+    }
+
+    .vip-book-image{
+        width: 162px;
+    }
+
+    .large-size ul.book-info li{
+        font-size: 11px;
+    }
+
+    .other-book-info b{
+        font-size: 14px;
+    }
+
+    .large-size p.book-name {
+        padding: 0;
+    }
+
+    .large-size {
+        max-height: 380px;
+    }
+
+    .extra-short-book li {
+        margin: 0;
+        padding: 4px;
+    }
+
+    .name-extra-short-book {
+        padding: 0px;
+    }
+
+    .image-extra-short-book{
+        min-height: 65px;
+    }
+
+    .top-translater .number{
+        width: 17%;
+    }
+}
+
+@media only screen  and (min-width: 980px) and (max-width: 1180px){
+
+    .navibar li:first-child a {
+        padding-left: 0px;
+        padding-right: 10px;
+    }
+
+    .navibar a {
+        font-size: 11px;
+        padding: 0px 10px;
+    }
+
+    .symbol{
+        width: 100%;
+        float: none;
+        line-height: 1;
+        font-size: 30px;
+    }
+
+    .link-login {
+        width: 100%;
+        float: none;
+        padding: 0;
+        text-align: center;
+        line-height: 1;
+    }
+
+    .login {
+        margin-top: 18px;
+    }
+
+    .large-size {
+        max-height: 282px;
+    }
+
+    .book-type-in-col-right li {
+        width: 100%;
+        float: none;
+        padding: 0;
+    }
+
+    .book-type-in-col-right li:nth-child(2n){
+        text-align: left;
+    }
+
+    .book-type-in-col-right ul {
+        max-height: 253px;
+        overflow: auto;
+    }
+
+    .cool-book .number{
+        font-size: 35px;
+        float: left;
+        width: 30%;
+        line-height: 1;
+    }
+
+    .cool-book .name-book{
+        padding: 0;
+        width: 70%;
+    }
+
+    .cool-book .name-book p{
+        font-size: 11px;
+    }
+
+    .vip-book {
+        max-height: 796px;
+        overflow: auto;
+    }
+
+    .vip-book-image {
+        width: 155px;
+        height: 220px;
+    }
+
+    .other-book-info b {
+        font-size: 12px;
+    }
+
+    .book-frame h3{
+        font-size: 12px;
+    }
+
+    .top-translater .number {
+        width: 30%;
+        font-size: 35px;
+    }
+
+    .top-translater .translater-name{
+        width: 65%;
+        padding: 0;
+    }
+
+    .translater-name p{
+        font-size: 12px;
+    }
+
+    .hot-book {
+        padding: 0;
+    }
+
+    .update-book {
+        max-height: 1613px;
+        overflow: auto;
+    }
+
+    .day-update-book{
+        font-size: 17px;
+    }
+
+    .chapter-in-book{
+        font-size: 16px;
+    }
+
+    .book-more-info .third-element{
+        font-size: 13px;
+    }
+
+    .book-name {
+        font-size: 13px;
+    }
+
+    .book-more-info .first-element{
+        margin-bottom: 22px;
+    }
+
+    .pagination{
+        text-align: left;
+    }
+
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 979px){
+
+    .display-none-768to979{
+        display: none !important;
+    }
+
+    .full-width-768to979{
+        width: 100%;
+    }
+
+    .navibar a{
+        font-size: 11px;
+        padding: 0px 10px;
+    }
+
+    .navibar li:first-child a{
+        padding-right: 10px;
+    }
+
+    .symbol{
+        width: 100%;
+        float: none;
+        line-height: 1;
+        font-size: 30px;
+    }
+
+    .link-login {
+        width: 100%;
+        float: none;
+        padding: 0;
+        text-align: center;
+        line-height: 1;
+    }
+
+    .login {
+        margin-top: 18px;
+    }
+
+}
+
+@media screen and (min-width: 640px) and (max-width: 768px){
+
+    .display-none-640to768{
+        display: none !important;
+    }
+
+    .full-width-640to768{
+        width: 100%;
+    }
+
+    .navibar a{
+        font-size: 13px;
+        padding: 0px 13px;
+    }
+
+    .navibar li:first-child a{
+        padding-right: 10px;
+    }
+
+    .symbol{
+        width: 100%;
+        float: none;
+        line-height: 1;
+        font-size: 30px;
+    }
+
+    .link-login {
+        width: 100%;
+        float: none;
+        padding: 0;
+        text-align: center;
+        line-height: 1;
+    }
+
+    .login {
+        margin-top: 18px;
+    }
+
+    .navibar ul{
+        width: 100%;
+    }
+
+    .vip-book-image {
+        width: 138px;
+        height: 200px;
+    }
+
+    .other-book-info b {
+        font-size: 11px;
+    }
+
+    .large-size {
+        max-height: 324px;
+    }
+
+    .hot-book {
+        padding: 0px;
+    }
+
+    .book-name {
+        font-size: 15px;
+    }
+
+    .pagination{
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 480px){
+
+    .display-none-max480px{
+        display: none;
+    }
+
+    .full-width-max480px{
+        width: 100%;
+    }
+
+    .menu-mobile{
+        display: block !important;
+        width: 100%;
+        height: 50px;
+        background: #73BF45;
+        position: fixed;
+        z-index: 99;
+    }
+
+    .show-menu {
+        font-size: 35px;
+        color: #fff;
+        width: 15%;
+        text-align: center;
+        float: left;
+    }
+
+    .logo-mobile {
+        width: 65%;
+        float: left;
+        text-align: center;
+        padding-top: 5px;
+    }
+
+    .logo-mobile img {
+        width: 15%;
+    }
+
+    .login-mobile {
+        width: 20%;
+        float: left;
+        text-align: center;
+    }
+
+    .login-mobile i {
+        font-size: 35px;
+        text-align: center;
+        color: #fff;
+        line-height: 1.5;
+    }
+
+    .menu-mobile-detail {
+        z-index: 99;
+        width: 100%;
+        height: 100vh;
+        background: #0000008c;
+        position: absolute;
+        right: 100%;
+        transition: all ease 0.3s;
+    }
+
+    .wrap-detail-menu-mobile {
+        max-height: 90vh;
+        width: 75%;
+        background: #73BF45;
+        position: relative;
+        overflow: auto;
+        float: left;
+    }
+
+    .book-type-mobile {
+        width: 100%;
+        display: block;
+        background: #fff;
+        margin-top: 20px;
+        max-height: 50vh;
+        overflow: auto;
+    }
+
+
+    .book-type-mobile ul {
+        list-style: none;
+        width: 90%;
+        margin: auto;
+        padding: 15px 0px;
+    }
+
+
+    .book-type-mobile li {
+        display: inline-block;
+        width: 49%;
+        margin: 12px 0px;
+    }
+
+
+    .book-type-mobile a {
+        font-size: 16px;
+        color: #6d6e71;
+        font-family: montserrat-normal;
+    }
+
+    .book-type-mobile i {
+        margin-right: 5px;
+    }
+
+    .book-soft-in-mobile {
+        width: 100%;
+        position: relative;
+        margin-top: 20px;
+    }
+
+    .book-soft-in-mobile h3 {
+        margin-top: 10px;
+        color: #fff;
+        font-family: montserrat-semibold;
+        padding-left: 20px;
+    }
+
+    .book-soft-in-mobile h3 i {
+        float: right;
+        clear: both;
+        margin-right: 15px;
+    }
+
+    .mobile-soft-by {
+        width: 100%;
+        position: relative;
+        background: #fff;
+    }
+
+    .mobile-soft-by ul {
+        list-style: none;
+        width: 90%;
+        margin: auto;
+    }
+
+    .mobile-soft-by li {
+        display: inline-block;
+        width: 49%;
+        margin: 6px 0px;
+        text-align: right;
+    }
+
+    .mobile-soft-by a {
+        font-family: montserrat-normal;
+        color: #6d6e71;
+    }
+
+    .search-mobile {
+        width: 90%;
+        margin: auto;
+    }
+
+    .footer-menu-mobile {
+        width: 100%;
+        color: #fff;
+        padding: 10px;
+    }
+
+    .join-us-mobile {
+        clear: both;
+        text-align: center;
+        font-family: montserrat-semibold;
+        margin: auto;
+        background: green;
+        font-weight: bold;
+        font-size: 27px;
+        padding: 5px 0px;
+        border-radius: 10px;
+    }
+
+    .contact-mobile {
+        float: left;
+        font-size: 20px;
+        padding: 0px 20px;
+        border-right: solid 1px #fff;
+        font-family: montserrat-semibold;
+        margin-bottom: 20px;
+    }
+
+    .about-us-mobile {
+        float: left;
+        font-size: 20px;
+        padding: 0px 20px;
+        font-family: montserrat-semibold;
+        margin-bottom: 20px;
+
+    }
+
+    .hide-menu-mobile {
+        float: left;
+        width: 25%;
+        min-height: 70vh;
+        max-height: 90vh;
+        font-size: 120px;
+        text-align: center;
+        line-height: 5;
+        color: #fff;
+        z-index: 9999;
+    }
+
+    .large-size ul.book-info li {
+        font-size: 9px;
+    }
+
+    .hide-in-decktop {
+        display: block;
+        padding-top: 50px;
+    }
+
+    .wrap-book.large-size.first-book {
+        margin-bottom: 20px;
+    }
+
+    .box-1 {
+        margin-bottom: 20px;
+        background: #fff;
+        padding: 10px;
+    }
+
+    .vip-book-mobile {
+        width: 100%;
+        position: relative;
+    }
+
+    .vip-book-mobile ul {
+        list-style: none;
+    }
+
+    .vip-book-mobile .book-image {
+        width: 30%;
+        height: 140px;
+        background: #ccc;
+        display: inline-block;
+    }
+
+    .vip-book-mobile .book-info {
+        width: 68%;
+        display: inline-block;
+    }
+
+    .vip-book-mobile .book-name{
+        font-size: 15px;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    .vip-book-mobile p{
+        margin: 0;
+    }
+
+    .vip-book-mobile p.translater-name {
+        font-size: 14px;
+        color: #6d6e71;
+        text-align: right;
+    }
+
+    .vip-book-mobile p.chapter-in-book {
+        font-size: 14px;
+        color: #6d6e71;
+        text-align: right;
+    }
+
+    .vip-book-mobile p.latetest-update {
+        font-size: 14px;
+        color: #6d6e71;
+        text-align: right;
+    }
+
+    .vip-book-mobile li {
+        border-bottom: solid 1px #ccc;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+
+    .cool-book-mobile {
+        width: 100%;
+        position: relative;
+    }
+
+    .cool-book-mobile ul {
+        list-style: none;
+        width: 100%;
+        display: block;
+    }
+
+    .cool-book-mobile li {
+        width: 100%;
+        position: relative;
+        min-height: 70px;
+    }
+
+    .cool-book-mobile .number {
+        color: #72bf44;
+        font-size: 40px;
+        font-weight: bold;
+        font-family: montserrat-bold;
+        float: left;
+        width: 13%;
+        text-align: center;
+    }
+    .cool-book-mobile .name-book {
+        width: 80%;
+        float: left;
+        position: relative;
+        padding-top: 10px;
+        padding-left: 10px;
+        font-size: 16px;
+    }
+
+    .cool-book-mobile .name-book p {
+        color: #959595;
+        font-size: 16px;
+        font-weight: bold;
+        margin: 0;
+    }
+
+    .cool-book-mobile .name-book span{
+        color: #959595;
+    }
+
+    .breadcrumb {
+        margin-top: 60px;
+    }
+
+    .book-by-category .book-name {
+        padding: 0;
+        font-size: 11px;
+    }
+
+    .book-by-category  .translater-name-in-category {
+        padding: 0;
+        font-size: 13px;
+    }
+
+    .book-by-category .translater-name-in-category i {
+        font-size: 15px;
+    }
+
+    .book-more-info .first-element {
+        font-size: 16px;
+        text-align: right;
+        margin: 0;
+    }
+
+    .book-more-info .second-element {
+        font-size: 13px;
+        text-align: right;
+    }
+
+    .book-more-info .third-element {
+        font-size: 12px;
+        position: absolute;
+        width: 100px;
+        bottom: -47%;
+    }
+    .pagination {
+        text-align: left;
+    }
+
+    .list-number-pagination {
+        margin: 0px 5px;
+    }
+
+    .reading-page{
+        padding: 70px 10px;
+    }
+
+    .basic-info .book-name {
+        font-size: 20px;
+    }
+
+    .basic-info .chapter-name {
+        font-size: 23px;
+    }
+
+    .all-chapter-of-book label{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 414px){
+
+}
+
+@media screen and (max-width: 320px){
+
+}

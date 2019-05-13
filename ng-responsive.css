@@ -1,0 +1,19 @@
+@media only screen and (max-width: 1200px) {
+	.ng-follow-us {
+		text-align: left;
+		margin-top: 10px;
+	}
+}
+
+@media only screen and (max-width: 992px) {
+	.ng_contact_body {
+		min-height: unset;
+	}
+	.ng-khung-contact {
+		margin-bottom: 50px;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	
+}

@@ -1,0 +1,67 @@
+.ng_contact_body {
+    margin: 0px;
+    background-repeat: no-repeat;
+    min-height: 877px;
+    background-image: url(./images/bg_contact.png);
+    background-color: #efefef;
+    background-size: 100%;
+    justify-content: center;
+    display: flex;
+}
+
+/* Form liên hệ*/
+.ng-sign-up-form {
+    margin-top: 100px;
+	max-width: 642px;
+    font-family: montserrat-bold;
+}
+.ng-label-lienhe {
+	margin-bottom: 31px;
+	font-size: 27px;
+	color: #808080;
+	text-transform: uppercase;
+}
+.ng-sign-up-form div>label  {
+    font-size: 23px;
+   	color: #808080;
+}
+.ng-sign-up-form div>label>small {
+	font-size: 14px;
+    font-weight: 100;
+	font-family: montserrat-normal;
+}
+.ng-radius-element {
+	border: unset;
+	border-radius: 25px !important;
+    padding: 25px;
+}
+.ng-nutsubmit-1 {
+    padding: 5px 20px;
+    font-size: 20px;
+    border-radius: 15px;
+    box-shadow: none;
+    outline: none;
+    border: none;
+    color: #fff;
+    background: #72bf44;
+}
+.ng-nutsubmit-2 {
+    padding: 5px 20px;
+    font-size: 20px;
+    border-radius: 15px;
+    box-shadow: none;
+    outline: none;
+    border: none;
+    color: #fff;
+    background: #808080;
+    margin-left: 10px;
+}
+.ng-follow-us {
+	font-family: montserrat-normal;
+	font-size: 23px;
+	text-align: right;
+	color: #808080;
+}
+/*.ng-group-nut {
+	max-width: 642px;
+}*/

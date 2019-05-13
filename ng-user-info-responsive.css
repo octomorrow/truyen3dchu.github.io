@@ -1,0 +1,21 @@
+@media only screen and (max-width: 1200px) {
+	.ng-upload-col {
+		display: none;
+	}
+	.ng-nutupoad-2:nth-child(1) {
+		display: block;
+	}
+}
+
+@media only screen and (max-width: 992px) {
+	.ng_contact_body {
+		min-height: unset;
+	}
+	.ng-khung-contact {
+		margin-bottom: 50px;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	
+}
