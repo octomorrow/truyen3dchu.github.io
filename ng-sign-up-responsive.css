@@ -1,0 +1,21 @@
+@media only screen and (max-width: 1200px) {
+	.ng-bg-sign-up {
+		min-height: 500px;
+	}
+}
+
+@media only screen and (max-width: 992px) {
+	.ng_contact_body {
+		min-height: unset;
+	}
+	.ng-khung-contact {
+		margin-bottom: 50px;
+	}
+	.ng-bg-sign-up {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	
+}

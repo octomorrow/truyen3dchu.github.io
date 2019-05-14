@@ -12,15 +12,15 @@
     <link href="css/font-awesome.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
     <!-- Nghĩa thêm file css -->
-    <link href="ng-user-info-css.css" rel="stylesheet">
-    <link href="ng-user-info-responsive.css" rel="stylesheet">
+    <link href="ng-sign-up-css.css" rel="stylesheet">
+    <link href="ng-sign-up-responsive.css" rel="stylesheet">
     <!-- end nghĩa -->
     <script src="js/jquery-1.11.2.min.js"></script>
     <script src="js/swiper.min.js"></script>
     <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="js/jquery-ui-1.8.13.custom.min.js"></script>
     <script src="js/bootstrap.js"></script>
-    <script src="ng-user-info-script.js"></script>
+    <script src="script.js"></script>
 </head>
 
 <header>
@@ -97,54 +97,38 @@
 
 <body>
 	<div class="row ng_contact_body">
-		<div class="col-xs-10 col-lg-9 ng-khung-contact">
-            <form action="" class="ng-sign-up-form" method="POST" encrypt="multipart/form-data">
-                 <div class="row">
-                    <div class="col-lg-6">
-                        <p class="ng-label-lienhe">Thay đổi thông tin</p>
+		<div class="col-xs-10 col-lg-8 ng-khung-contact">
+			<div class="row">
+                <div class="col-sm-12 col-md-6 col-xs-12">
+                    <form class="ng-sign-up-form" action="" method="get">
+                        <p class="ng-label-lienhe">đăng kí thành viên</p>
                         <div class="form-group">
-                            <label for="email">Tên hiển thị&nbsp;<small>(bắt buộc)</small></label>
+                            <label for="email">Email&nbsp;<small>(bắt buộc)</small></label>
                             <input type="email" class="form-control ng-radius-element" id="email" autocomplete="off">
                         </div>
                         <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" class="form-control ng-radius-element" id="email" autocomplete="off">
+                            <label for="matkhau" class="label-bold">Mật khẩu&nbsp;<small>(ít nhất 6 kí tự)</small></label>
+                            <input type="password" class="form-control ng-radius-element" id="matkhau" autocomplete="off">
                         </div>
                         <div class="form-group">
-                            <label for="email">Số điện thoại</label>
-                            <input type="email" class="form-control ng-radius-element" id="email" autocomplete="off">
+                            <label for="matkhaulan2" class="label-bold">Nhập lại mật khẩu</label>
+                            <input type="password" class="form-control ng-radius-element" id="matkhaulan2" autocomplete="off">
                         </div>
                         <div class="form-group">
-                            <label for="sdt" class="label-bold">Địa chỉ</label>
-                            <input type="text" class="form-control ng-radius-element" id="sdt" autocomplete="off">
-                        </div>
-                        <div class="form-group">
-                            <!-- <label for="image" class="label-bold">Upload ảnh</label> -->
-                             <div class="ng-nutupoad-2 ng-none-user-select ng-pointer" onclick="getAcceptedExtension()" title="Tải ảnh lên"><i class="fa fa-edit">&nbsp;</i>Upload a photo</div>
-                             <div class="ng-group-icon-user-1">
-                            </div>
+                            <label for="tenhienthi" class="label-bold">Tên hiển thị&nbsp;<small>(bắt buộc)</small></label>
+                            <input type="text" class="form-control ng-radius-element" id="tenhienthi" autocomplete="off">
                         </div>
                         <div class="col-xs-12 col-lg-12 ng-group-nut">
-                            <button type="submit" class="ng-nutsubmit-1">Lưu</button>
+                            <button type="submit" class="ng-nutsubmit-1">Đăng ký</button>
                             <button type="submit" class="ng-nutsubmit-2">Hủy</button>
                         </div>
-                    </div>         
-                    <div class="col-lg-6 ng-upload-col">
-                        <div class="row ng-mt-60">
-                            <div class="col-md-12 ng-group-icon-user-2" onclick="getAcceptedExtension()">
-                                <i class="fa fa-user ng-icon-user"></i>
-                            </div>
-                            <div class="col-md-12 ng-group-upload">
-                                <input id="inputFile1" type="file" class="form-control" style="display: none;" onchange="getimgsource(this)">
-                                <span class="ng-nutupoad-2 ng-none-user-select ng-pointer" onclick="getAcceptedExtension()" title="Tải ảnh lên"><i class="fa fa-edit">&nbsp;</i>Upload a photo</span>
-                            </div>
-                        </div>
-                    </div>
-                    </form>
+                    </form>         
                 </div>
-            </form>
-		</div>
+                <div class="col-md-6 col-xs-4 ng-bg-sign-up">
+                </div>
+        </div>
     </div>
+</div>
 </body>
 
 <footer>

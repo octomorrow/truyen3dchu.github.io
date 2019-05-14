@@ -2,14 +2,14 @@
     margin: 0px;
     background-repeat: no-repeat;
     min-height: 877px;
-    background-image: url(./images/bg_contact.png);
+    /*background-image: url(./images/bg_contact.png);*/
     background-color: #efefef;
     background-size: 100%;
     justify-content: center;
     display: flex;
 }
 
-/* Form user info*/
+/* Form liên hệ*/
 .ng-sign-up-form {
     margin-top: 100px;
     font-family: montserrat-bold;
@@ -20,11 +20,11 @@
 	color: #808080;
 	text-transform: uppercase;
 }
-.ng-sign-up-form .form-group label  {
+.ng-sign-up-form div>label  {
     font-size: 23px;
    	color: #808080;
 }
-.ng-sign-up-form .form-group label>small {
+.ng-sign-up-form div>label>small {
 	font-size: 14px;
     font-weight: 100;
 	font-family: montserrat-normal;
@@ -61,53 +61,17 @@
 	text-align: right;
 	color: #808080;
 }
-.ng-mt-60 {
-    margin-top: 60px;
+.ng-group-nut {
+	margin-top: 20px;
+    padding: 0px;
 }
-.ng-group-icon-user-1, .ng-group-icon-user-2 {
-    padding-right: 0px;
-    display: flex;
-    justify-content: center;
-}
-.ng-icon-user {
-    font-size: 370px;
-    border-radius: 100%;
-    background: #ddd;
-    color: #fff;
-    width: 450px;
-    height: 450px;
-    text-align: center;
-    line-height: 1.2;
-    cursor: pointer;
-}
-
-.ng-group-upload {
-    margin-top: 5px;
-    justify-content: center;
-    display: flex;
-    font-size: 20px;
-    font-family: montserrat-semibold;
-    color: #808080;
-}
-
-.ng-group-upload>span {
-    cursor: pointer;
-}
-.ng-nutupoad-2 {
-    font-size: 20px;
-    font-family: montserrat-semibold;
-    color: #808080;
-}
-.ng-nutupoad-2:nth-child(1) {
-    display: none;
-}
-.ng-none-user-select {
-    user-select: none;
-}
-.ng-pointer {
-    cursor: pointer;
-}
-.ng-user-image {
-    max-width: 100%;
-    max-height: 300px;
+.ng-bg-sign-up {
+    margin-top: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-image: url(./images/sign-up-icon.jpg);
+    min-height: 600px;
+    max-height: 25vw;
 }
