@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <title>Info Truyện</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/swiper.min.css" rel="stylesheet">
+    <link href="css/jquery.mCustomScrollbar.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <link href="responsive.css" rel="stylesheet">
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/jquery-ui-1.8.13.custom.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<header>
+    <div class="menu display-none-max480px">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                    <div class="logo">
+                        <img src="images/logo.png">
+                    </div>
+                </div>
+
+                <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                    <form class="search">
+                        <input class="searchTerm" placeholder=""/><input class="searchButton" type="submit"/>
+                    </form>
+
+                    <div class="navibar">
+                        <ul>
+                            <li class="book-type">
+                                <i class="fa fa-align-justify"></i>
+                                <a>Thể Loại</a>
+                                <ul class="sub-menu">
+                                    <li><a>Tiên hiệp</a></li>
+                                    <li><a>Kiếm hiệp</a></li>
+                                    <li><a>Truyện teen</a></li>
+                                    <li><a>Ngôn tình</a></li>
+                                    <li><a>Đô thị</a></li>
+                                    <li><a>Lịch sử</a></li>
+                                    <li><a>Xuyên không</a></li>
+                                    <li><a>Quân sự</a></li>
+                                    <li><a>Truyện ma</a></li>
+                                    <li><a>Trinh thám</a></li>
+                                </ul>
+
+                            </li>
+                            <li class="book-soft">
+                                <a>Sắp Xếp</a>
+                                <ul class="sub-menu">
+                                    <li><a>Truyện Vip</a></li>
+                                    <li><a>Mới Cập Nhật</a></li>
+                                    <li><a>Mới Đăng</a></li>
+                                    <li><a>Xem Nhiều</a></li>
+                                    <li><a>Yêu Thích</a></li>
+                                    <li><a>Truyện Full</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a>Liên Hệ</a>
+                            </li>
+                            <li>
+                                <a>Về Chúng Tôi</a>
+                            </li>
+                        </ul>
+
+                        <div class="join-us display-none-640to768">
+                            <a>Tuyển thành viên</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-2 col-sm-2 col-md-2 col-md-2">
+                    <div class="login">
+                        <div class="symbol">
+                            <p class="fa fa-user"></p>
+                        </div>
+                        <div class="link-login">
+                            <a href="">
+                                <p>Tài khoản</p>
+                                <span class="display-none-640to768">Đăng ký & đăng nhập</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="menu-mobile">
+        <div class="show-menu">
+            <i class="fa fa-align-justify"></i>
+
+            <script>
+                $(".show-menu").click(function () {
+                    $(".menu-mobile-detail").css({
+                        right: '0%'
+                    });
+                });
+
+            </script>
+        </div>
+        <div class="logo-mobile">
+            <img src="images/logo.png">
+        </div>
+        <div class="login-mobile">
+            <i class="fa fa-user"></i>
+        </div>
+
+        <div class="menu-mobile-detail">
+            <div class="wrap-detail-menu-mobile">
+                <div class="search-mobile">
+                    <form class="search">
+                        <input class="searchTerm" placeholder=""/><input class="searchButton" type="submit"/>
+                    </form>
+                </div>
+
+                <div class="book-type-mobile">
+                    <ul>
+                        <li><a><i class="fa fa-tags"></i>Tiên hiệp</a></li>
+                        <li><a><i class="fa fa-tags"></i>Kiếm hiệp</a></li>
+                        <li><a><i class="fa fa-tags"></i>Truyện teen</a></li>
+                        <li><a><i class="fa fa-tags"></i>Ngôn tình</a></li>
+                        <li><a><i class="fa fa-tags"></i>Đô thị</a></li>
+                        <li><a><i class="fa fa-tags"></i>Lịch sử</a></li>
+                        <li><a><i class="fa fa-tags"></i>Xuyên không</a></li>
+                        <li><a><i class="fa fa-tags"></i>Quân sự</a></li>
+                        <li><a><i class="fa fa-tags"></i>Truyện ma</a></li>
+                        <li><a><i class="fa fa-tags"></i>Trinh thám</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="book-soft-in-mobile">
+                    <h3>Sắp xếp <i class="fa fa-caret-down"></i></h3>
+
+                    <div class="mobile-soft-by">
+                        <ul>
+                            <li><a>Truyện Vip</a></li>
+                            <li><a>Mới Cập Nhật</a></li>
+                            <li><a>Mới Đăng</a></li>
+                            <li><a>Xem Nhiều</a></li>
+                            <li><a>Yêu Thích</a></li>
+                            <li><a>Truyện Full</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer-menu-mobile">
+                    <div class="contact-mobile">Liên Hệ</div>
+                    <div class="about-us-mobile">Về chúng tôi</div>
+                    <div class="join-us-mobile">Tuyển thành viên</div>
+                </div>
+            </div>
+
+            <div class="hide-menu-mobile" onclick="hideMenu()">
+                <i class="fa fa-chevron-left  "></i>
+                <script>
+
+                    function hideMenu() {
+                        $(".menu-mobile-detail").css('right', '100%');
+                    }
+                </script>
+
+            </div>
+        </div>
+    </div>
+</header>
+
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9 full-width-768to979 full-width-640to768">
+            <div class="breadcrumb row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <p>
+                        <span> Trang chủ ></span>
+                        <span> Ngôn tình ></span>
+                        <span> LEGEND OF THE DRAGON KING</span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="background: #fff;    padding: 20px 20px 80px 20px;">
+                    <div class="row">
+                        <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+                            <img src="./images/image_demo1.png" alt="" style="max-width: 100%;">
+                            <ul style="list-style: none; font-family: montserrat-normal;">
+                                <li style="padding: 10px; color: #808080;"><i class="fa fa-user fa-2x">&nbsp;&nbsp;</i>Thiên hạ đệ nhất xàm</li>
+                                <li style="padding: 10px; color: #808080;"><img src="./images/book-icon_03.png" alt="">&nbsp;&nbsp;&nbsp;123 Chaps</li>
+                                <li style="padding: 10px; color: #808080;"><i class="fa fa-rss fa-2x">&nbsp;&nbsp;</i>Đang cập nhật</li>
+                                <li style="padding: 10px; color: #808080;"><i class="fa fa-tags fa-2x">&nbsp;&nbsp;</i>Tiên hiệp</li>
+                                <li style="padding: 10px; color: #808080;"><i class="fa fa-cloud-download fa-2x">&nbsp;&nbsp;</i>VIP</li>
+                                <li style="padding: 10px; color: #808080;"><i class="fa fa-eye fa-2x">&nbsp;&nbsp;</i>95959594</li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
+                            <div class="text-center" style="    color: #73bf45;
+    font-family: monospace;
+    font-family: montserrat-bold;
+    font-size: 21px;">LEGEND OF THE DRAGON KING</div>
+                            <div class="text-center" style="margin-top: 10px;">
+                                <i class="fa fa-star" style="font-size: 18px;color: #fed579;">&nbsp;</i>
+                                <i class="fa fa-star" style="font-size: 18px;color: #fed579;">&nbsp;</i>
+                                <i class="fa fa-star" style="font-size: 18px;color: #fed579;">&nbsp;</i>
+                                <i class="fa fa-star" style="font-size: 18px;color: #fed579;">&nbsp;</i>
+                                <i class="fa fa-star" style="font-size: 18px;color: #fed579;">&nbsp;</i>
+                                <i class="fa fa-star" style="font-size: 18px;color: #808080;">&nbsp;</i>
+                                <i class="fa fa-star" style="font-size: 18px;color: #808080;">&nbsp;</i>
+                                <i class="fa fa-star" style="font-size: 18px;color: #808080;">&nbsp;</i>
+                                <i class="fa fa-star" style="font-size: 18px;color: #808080;">&nbsp;</i>
+                                <i class="fa fa-star" style="font-size: 18px;color: #808080;">&nbsp;</i>
+                            </div>
+                            <div class="text-left" style="    font-size: 13px;
+    color: #808080;
+    font-family: montserrat-normal;"><b>Legend of the dragon king</b> Review Rating 6/10 dựa trên 1234 lượt xems</div>
+                            <div class="row" style="margin-top: 15px;">
+                                <div style="    float: left;
+    background: #73bf45;
+    color: #fff;
+    padding: 5px 10px;
+    text-align: left;
+    font-size: 20px;
+    margin-right: 30px;
+    align-items: center;
+    display: flex;">
+                                    <i class="fa fa-bars fa-2x"></i>
+                                    <span style="margin-left: 10px;">DS Chương</span>
+                                </div>
+                                <div style="    float: left;
+    background: #73bf45;
+    color: #fff;
+    padding: 5px 10px;
+    text-align: left;
+    font-size: 20px;
+    margin-right: 30px;
+    align-items: center;
+    display: flex;">
+                                    <i class="fa fa-eye fa-2x"></i>
+                                    <span style="margin-left: 10px;">Đọc chuyện</span>
+                                </div>
+                                <div style="display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    font-size: 50px;
+    color: #fe0000;">
+                                    <i class="fa fa-heart"></i>
+                                </div>
+                            </div>
+                            <div class="row" style="margin-top: 10px;">
+                                <div class="col-md-12">
+                                    <span style="    padding: 0px 15px;
+    color: #fff;
+    background: #336fb7;
+    display: inline-block;
+    margin-right: 5px;
+    border-radius: 5px;
+    font-size: 20px;"><i class="fa fa-thumbs-up">&nbsp;</i>Like</span>
+                                    <span style="    padding: 0px 15px;
+    color: #fff;
+    background: #336fb7;
+    display: inline-block;
+    margin-right: 5px;
+    border-radius: 5px;
+    font-size: 20px;">Share</span>
+                                </div>
+                            </div>
+                            <div class="row" style="margin-top: 20px; padding: 5px; color: #808080; font-size: 14px; font-family: montserrat-normal;text-align: justify;">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, reprehenderit at hic quas odit. Inventore odio nam minus esse et ut dolor sunt deserunt cupiditate, reiciendis, saepe, odit asperiores beatae.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, reprehenderit at hic quas odit. Inventore odio nam minus esse et ut dolor sunt deserunt cupiditate, reiciendis, saepe, odit asperiores beatae.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, reprehenderit at hic quas odit. Inventore odio nam minus esse et ut dolor sunt deserunt cupiditate, reiciendis, saepe, odit asperiores beatae.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, reprehenderit at hic quas odit. Inventore odio nam minus esse et ut dolor sunt deserunt cupiditate, reiciendis, saepe, odit asperiores beatae.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, reprehenderit at hic quas odit. Inventore odio nam minus esse et ut dolor sunt deserunt cupiditate, reiciendis, saepe, odit asperiores beatae.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, reprehenderit at hic quas odit. Inventore odio nam minus esse et ut dolor sunt deserunt cupiditate, reiciendis, saepe, odit asperiores beatae.
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <span style="float: right;color: #73bf45;
+    font-family: montserrat-bold;">Xem thêm</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="margin-top: 50px; background: #fff; padding: 5px;">
+                    <h4 style="color: #73bf45; font-family: montserrat-bold; text-transform: uppercase;">Chương mới cập nhật</h4>
+                    <ul style="border-radius: 25px; background: #73bf45; padding: 5px 10px; list-style: none; color: #ffff; font-family: montserrat-normal;">
+                        <li style="padding: 5px; display: flex;"><span style="flex-grow: 1">Chương 123 - Truyện tên siêu dài demo cho chắc chắn</span><span style="">2 ngày trước</span></li>
+                        <li style="padding: 5px; display: flex;"><span style="flex-grow: 1">Chương 123 - Truyện tên siêu dài demo cho chắc chắn</span><span style="">2 ngày trước</span></li>
+                        <li style="padding: 5px; display: flex;"><span style="flex-grow: 1">Chương 123 - Truyện tên siêu dài demo cho chắc chắn</span><span style="">2 ngày trước</span></li>
+                        <li style="padding: 5px; display: flex;"><span style="flex-grow: 1">Chương 123 - Truyện tên siêu dài demo cho chắc chắn</span><span style="">2 ngày trước</span></li>
+                        <li style="padding: 5px; display: flex;"><span style="flex-grow: 1">Chương 123 - Truyện tên siêu dài demo cho chắc chắn</span><span style="">2 ngày trước</span></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="margin-top: 50px; background: #fff; padding: 5px; overflow-y: auto; max-height: 900px;">
+                    <div class="card">
+                        <div class="card-header" style="border-bottom: 3px solid #73bf45;">
+                            <h4 style="color: #73bf45; font-family: montserrat-bold; text-transform: uppercase;">Tập 1: Bánh ngọt và xúc xích không ưu nhau</h4>
+                        </div>
+                        <div class="row card-body" style="flex-direction: column;">
+                            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                <img src="" alt="">
+                            </div>
+                            <ul class="col-xs-8 col-sm-8 col-md-8 col-lg-8" style="list-style: none; color: #808080; font-family: montserrat-normal;">
+                                <li style="padding: 15px; display: flex;"><span style="flex-grow: 1">Chương 123 - Truyện tên siêu dài demo cho chắc chắn</span><span style="">13/04/19</span></li>
+                                <li style="padding: 15px; display: flex;"><span style="flex-grow: 1">Chương 123 - Truyện tên siêu dài demo cho chắc chắn</span><span style="">13/04/19</span></li>
+                                <li style="padding: 15px; display: flex;"><span style="flex-grow: 1">Chương 123 - Truyện tên siêu dài demo cho chắc chắn</span><span style="">13/04/19</span></li>
+                                <li style="padding: 15px; display: flex;"><span style="flex-grow: 1">Chương 123 - Truyện tên siêu dài demo cho chắc chắn</span><span style="">13/04/19</span></li>
+                                <li style="padding: 15px; display: flex;"><span style="flex-grow: 1">Chương 123 - Truyện tên siêu dài demo cho chắc chắn</span><span style="">13/04/19</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" style="border-bottom: 3px solid #73bf45;">
+                            <h4 style="color: #73bf45; font-family: montserrat-bold; text-transform: uppercase;">Tập 1: Bánh ngọt và xúc xích không ưu nhau</h4>
+                        </div>
+                        <div class="row card-body" style="flex-direction: column;">
+                            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                <img src="" alt="">
+                            </div>
+                            <ul class="col-xs-8 col-sm-8 col-md-8 col-lg-8" style="list-style: none; color: #808080; font-family: montserrat-normal;">
+                                <li style="padding: 15px; display: flex;"><span style="flex-grow: 1">Chương 123 - Truyện tên siêu dài demo cho chắc chắn</span><span style="">13/04/19</span></li>
+                                <li style="padding: 15px; display: flex;"><span style="flex-grow: 1">Chương 123 - Truyện tên siêu dài demo cho chắc chắn</span><span style="">13/04/19</span></li>
+                                <li style="padding: 15px; display: flex;"><span style="flex-grow: 1">Chương 123 - Truyện tên siêu dài demo cho chắc chắn</span><span style="">13/04/19</span></li>
+                                <li style="padding: 15px; display: flex;"><span style="flex-grow: 1">Chương 123 - Truyện tên siêu dài demo cho chắc chắn</span><span style="">13/04/19</span></li>
+                                <li style="padding: 15px; display: flex;"><span style="flex-grow: 1">Chương 123 - Truyện tên siêu dài demo cho chắc chắn</span><span style="">13/04/19</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" style="border-bottom: 3px solid #73bf45;">
+                            <h4 style="color: #73bf45; font-family: montserrat-bold; text-transform: uppercase;">Tập 1: Bánh ngọt và xúc xích không ưu nhau</h4>
+                        </div>
+                        <div class="row card-body" style="flex-direction: column; margin: 0px;">
+                            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                <img src="" alt="">
+                            </div>
+                            <ul class="col-xs-8 col-sm-8 col-md-8 col-lg-8" style="list-style: none; color: #808080; font-family: montserrat-normal;">
+                                <li style="padding: 15px; display: flex;"><span style="flex-grow: 1">Chương 123 - Truyện tên siêu dài demo cho chắc chắn</span><span style="">13/04/19</span></li>
+                                <li style="padding: 15px; display: flex;"><span style="flex-grow: 1">Chương 123 - Truyện tên siêu dài demo cho chắc chắn</span><span style="">13/04/19</span></li>
+                                <li style="padding: 15px; display: flex;"><span style="flex-grow: 1">Chương 123 - Truyện tên siêu dài demo cho chắc chắn</span><span style="">13/04/19</span></li>
+                                <li style="padding: 15px; display: flex;"><span style="flex-grow: 1">Chương 123 - Truyện tên siêu dài demo cho chắc chắn</span><span style="">13/04/19</span></li>
+                                <li style="padding: 15px; display: flex;"><span style="flex-grow: 1">Chương 123 - Truyện tên siêu dài demo cho chắc chắn</span><span style="">13/04/19</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="margin-top: 50px; background: #fff; padding: 5px; overflow-y: auto;">
+
+                </div> -->
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="comment-box">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a data-toggle="tab" href="#comment">Bình luận</a></li>
+                        <li><a data-toggle="tab" href="#comment-facebook">Facebook</a></li>
+                    </ul>
+
+                    <div class="tab-content">
+                        <div id="comment" class="tab-pane fade in active">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                    <div class="comment-detail">
+                                        <div class="row post-comment">
+                                            <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 avata"></div>
+                                            <div class="col-xs-7 col-sm-8 col-md-8 col-lg-8 user-comment">
+                                                <div class="user-post-comment-name">Ngô Bá Khá</div>
+                                                <div class="user-post-comment-content">Truyện hay như Khá Bảnh múa quạt</div>
+                                            </div>
+                                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 btn-reply">
+                                                <button class="btn btn-primary">Reply</button>
+                                            </div>
+
+                                            <div class="row reply-comment">
+                                                <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 avata"></div>
+                                                <div class="col-xs-7 col-sm-8 col-md-8 col-lg-8 user-comment">
+                                                    <div class="user-post-comment-name">Ngô Bá Khá</div>
+                                                    <div class="user-post-comment-content">Truyện hay như Khá Bảnh múa quạt</div>
+                                                </div>
+                                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 btn-reply"></div>
+                                            </div>
+
+                                            <div class="row reply-comment">
+                                                <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 avata"></div>
+                                                <div class="col-xs-7 col-sm-8 col-md-8 col-lg-8 user-comment">
+                                                    <div class="user-post-comment-name">Ngô Bá Khá</div>
+                                                    <div class="user-post-comment-content">Truyện hay như Khá Bảnh múa quạt</div>
+                                                </div>
+                                                <div class="col-xs-3 col-md-3 col-lg-3 btn-reply"></div>
+                                            </div>
+
+                                            <div class="row reply-comment">
+                                                <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 avata"></div>
+                                                <div class="col-xs-7 col-sm-8 col-md-8 col-lg-8 user-comment">
+                                                    <div class="user-post-comment-name">Ngô Bá Khá</div>
+                                                    <div class="user-post-comment-content">Truyện hay như Khá Bảnh múa quạt</div>
+                                                </div>
+                                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 btn-reply"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row post-comment">
+                                            <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 avata"></div>
+                                            <div class="col-xs-7 col-sm-8 col-md-8 col-lg-8 user-comment">
+                                                <div class="user-post-comment-name">Ngô Bá Khá</div>
+                                                <div class="user-post-comment-content">Truyện hay như Khá Bảnh múa quạt</div>
+                                            </div>
+                                            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 btn-reply">
+                                                <button class="btn btn-primary">Reply</button>
+                                            </div>
+
+                                            <div class="row reply-comment">
+                                                <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 avata"></div>
+                                                <div class="col-xs-7 col-sm-8 col-md-8 col-lg-8 user-comment">
+                                                    <div class="user-post-comment-name">Ngô Bá Khá</div>
+                                                    <div class="user-post-comment-content">Truyện hay như Khá Bảnh múa quạt</div>
+                                                </div>
+                                                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 btn-reply"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="comment-facebook" class="tab-pane fade">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 display-none-768to979 display-none-640to768 full-width-max480px">
+            <div class="cool-book book-frame">
+                <h3>Truyện Ngôn tình mới</h3>
+                <div class="row">
+                    <div class="col-md-12 col-lg-12">
+                        <ul>
+                            <li>
+                                <a>
+                                    <div class="number">1</div>
+                                    <div class="name-book">
+                                        <p>Anh hùng xạ điêu đề phòng tên dài</p>
+                                        <span><i class="glyphicon glyphicon-eye-open"></i> 12345678</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a>
+                                    <div class="number">2</div>
+                                    <div class="name-book">
+                                        <p>Anh hùng xạ điêu đề phòng tên dài</p>
+                                        <span><i class="glyphicon glyphicon-eye-open"></i> 12345678</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a>
+                                    <div class="number">3</div>
+                                    <div class="name-book">
+                                        <p>Anh hùng xạ điêu đề phòng tên dài</p>
+                                        <span><i class="glyphicon glyphicon-eye-open"></i> 12345678</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a>
+                                    <div class="number">4</div>
+                                    <div class="name-book">
+                                        <p>Anh hùng xạ điêu đề phòng tên dài</p>
+                                        <span><i class="glyphicon glyphicon-eye-open"></i> 12345678</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a>
+                                    <div class="number">5</div>
+                                    <div class="name-book">
+                                        <p>Anh hùng xạ điêu đề phòng tên dài</p>
+                                        <span><i class="glyphicon glyphicon-eye-open"></i> 12345678</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a>
+                                    <div class="number">6</div>
+                                    <div class="name-book">
+                                        <p>Anh hùng xạ điêu đề phòng tên dài</p>
+                                        <span><i class="glyphicon glyphicon-eye-open"></i> 12345678</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a>
+                                    <div class="number">7</div>
+                                    <div class="name-book">
+                                        <p>Anh hùng xạ điêu đề phòng tên dài</p>
+                                        <span><i class="glyphicon glyphicon-eye-open"></i> 12345678</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a>
+                                    <div class="number">8</div>
+                                    <div class="name-book">
+                                        <p>Anh hùng xạ điêu đề phòng tên dài</p>
+                                        <span><i class="glyphicon glyphicon-eye-open"></i> 12345678</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a>
+                                    <div class="number">9</div>
+                                    <div class="name-book">
+                                        <p>Anh hùng xạ điêu đề phòng tên dài</p>
+                                        <span><i class="glyphicon glyphicon-eye-open"></i> 12345678</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a>
+                                    <div class="number">10</div>
+                                    <div class="name-book">
+                                        <p>Anh hùng xạ điêu đề phòng tên dài</p>
+                                        <span><i class="glyphicon glyphicon-eye-open"></i> 12345678</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="view-more">
+                            <a>Xem thêm</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cool-book book-frame magrin-20top">
+                <h3>Truyện Ngôn tình full</h3>
+                <div class="row">
+                    <div class="col-md-12 col-lg-12">
+                        <ul>
+                            <li>
+                                <a>
+                                    <div class="number">1</div>
+                                    <div class="name-book">
+                                        <p>Anh hùng xạ điêu đề phòng tên dài</p>
+                                        <span><i class="glyphicon glyphicon-eye-open"></i> 12345678</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a>
+                                    <div class="number">2</div>
+                                    <div class="name-book">
+                                        <p>Anh hùng xạ điêu đề phòng tên dài</p>
+                                        <span><i class="glyphicon glyphicon-eye-open"></i> 12345678</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a>
+                                    <div class="number">3</div>
+                                    <div class="name-book">
+                                        <p>Anh hùng xạ điêu đề phòng tên dài</p>
+                                        <span><i class="glyphicon glyphicon-eye-open"></i> 12345678</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a>
+                                    <div class="number">4</div>
+                                    <div class="name-book">
+                                        <p>Anh hùng xạ điêu đề phòng tên dài</p>
+                                        <span><i class="glyphicon glyphicon-eye-open"></i> 12345678</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a>
+                                    <div class="number">5</div>
+                                    <div class="name-book">
+                                        <p>Anh hùng xạ điêu đề phòng tên dài</p>
+                                        <span><i class="glyphicon glyphicon-eye-open"></i> 12345678</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a>
+                                    <div class="number">6</div>
+                                    <div class="name-book">
+                                        <p>Anh hùng xạ điêu đề phòng tên dài</p>
+                                        <span><i class="glyphicon glyphicon-eye-open"></i> 12345678</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a>
+                                    <div class="number">7</div>
+                                    <div class="name-book">
+                                        <p>Anh hùng xạ điêu đề phòng tên dài</p>
+                                        <span><i class="glyphicon glyphicon-eye-open"></i> 12345678</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a>
+                                    <div class="number">8</div>
+                                    <div class="name-book">
+                                        <p>Anh hùng xạ điêu đề phòng tên dài</p>
+                                        <span><i class="glyphicon glyphicon-eye-open"></i> 12345678</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a>
+                                    <div class="number">9</div>
+                                    <div class="name-book">
+                                        <p>Anh hùng xạ điêu đề phòng tên dài</p>
+                                        <span><i class="glyphicon glyphicon-eye-open"></i> 12345678</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a>
+                                    <div class="number">10</div>
+                                    <div class="name-book">
+                                        <p>Anh hùng xạ điêu đề phòng tên dài</p>
+                                        <span><i class="glyphicon glyphicon-eye-open"></i> 12345678</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="view-more">
+                            <a>Xem thêm</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="book-type-in-col-right book-frame magrin-20top display-none-max480px">
+                <h3>Thể loại truyện</h3>
+                <div class="row">
+                    <div class="col-md-12 col-lg-12">
+                        <ul>
+                            <li>
+                                <a>
+                                    <i class="fa fa-tags"></i>
+                                    Tiên hiệp
+                                </a>
+                            </li>
+
+                            <li>
+                                <a>
+                                    <i class="fa fa-tags"></i>
+                                    Tiên hiệp
+                                </a>
+                            </li>
+
+                            <li>
+                                <a>
+                                    <i class="fa fa-tags"></i>
+                                    Tiên hiệp
+                                </a>
+                            </li>
+
+                            <li>
+                                <a>
+                                    <i class="fa fa-tags"></i>
+                                    Tiên hiệp
+                                </a>
+                            </li>
+
+                            <li>
+                                <a>
+                                    <i class="fa fa-tags"></i>
+                                    Tiên hiệp
+                                </a>
+                            </li>
+
+                            <li>
+                                <a>
+                                    <i class="fa fa-tags"></i>
+                                    Tiên hiệp
+                                </a>
+                            </li>
+
+                            <li>
+                                <a>
+                                    <i class="fa fa-tags"></i>
+                                    Tiên hiệp
+                                </a>
+                            </li>
+
+                            <li>
+                                <a>
+                                    <i class="fa fa-tags"></i>
+                                    Tiên hiệp
+                                </a>
+                            </li>
+
+                            <li>
+                                <a>
+                                    <i class="fa fa-tags"></i>
+                                    Tiên hiệp
+                                </a>
+                            </li>
+
+                            <li>
+                                <a>
+                                    <i class="fa fa-tags"></i>
+                                    Tiên hiệp
+                                </a>
+                            </li>
+
+                            <li>
+                                <a>
+                                    <i class="fa fa-tags"></i>
+                                    Tiên hiệp
+                                </a>
+                            </li>
+
+                            <li>
+                                <a>
+                                    <i class="fa fa-tags"></i>
+                                    Tiên hiệp
+                                </a>
+                            </li>
+
+                            <li>
+                                <a>
+                                    <i class="fa fa-tags"></i>
+                                    Tiên hiệp
+                                </a>
+                            </li>
+
+                            <li>
+                                <a>
+                                    <i class="fa fa-tags"></i>
+                                    Tiên hiệp
+                                </a>
+                            </li>
+
+                            <li>
+                                <a>
+                                    <i class="fa fa-tags"></i>
+                                    Tiên hiệp
+                                </a>
+                            </li>
+
+                            <li>
+                                <a>
+                                    <i class="fa fa-tags"></i>
+                                    Tiên hiệp
+                                </a>
+                            </li>
+
+                            <li>
+                                <a>
+                                    <i class="fa fa-tags"></i>
+                                    Tiên hiệp
+                                </a>
+                            </li>
+
+                            <li>
+                                <a>
+                                    <i class="fa fa-tags"></i>
+                                    Tiên hiệp
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+
+
+<footer>
+    <div class="footer">
+        <div class="container">
+            <span class="monterat-bold">"</span>
+            <span>Xin Chào! Đây là website chính thức của nhóm truyện ValvrareTeam. Mấy đứa cùng sở thích cùng làm với nhau thôi. Light Novel trên đây được chúng tôi dịch hoàn toàn miễn phí ra bản tiếng việt, tuy nhiên chúng tôi không khuyến kích các bạn sao chép lên website khác<br><br>Xin cám ơn vì đã quan tâm</span>
+            <span class="monterat-bold">"</span>
+        </div>
+    </div>
+</footer>
+
+</html>
